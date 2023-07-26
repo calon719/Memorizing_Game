@@ -1,0 +1,212 @@
+@import 'reset.css';
+
+:root {
+  --ff-nunito: 'Nunito';
+  --gutter: .25rem;
+}
+
+body {
+  font-family: var(--ff-nunito), sans-serif;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  padding-right: calc(var(--gutter) * 20);
+  padding-left: calc(var(--gutter) * 20);
+}
+
+.text-danger {
+  color: red;
+}
+
+.text-dark-info {
+  color: #777891;
+}
+
+.bg-white-opacity {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-info-opacity {
+  background-color: rgba(182, 227, 250, 0.7);
+}
+
+.fs-lg {
+  font-size: calc(var(--gutter) * 6);
+}
+
+.fs-2xl {
+  font-size: calc(var(--gutter) * 12);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-12 {
+  width: calc(var(--gutter) * 12);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-2 {
+  padding: calc(var(--gutter) * 2);
+}
+
+.py-12 {
+  padding-top: calc(var(--gutter) * 12);
+  padding-bottom: calc(var(--gutter) * 12);
+}
+
+.pt-4 {
+  padding-top: calc(var(--gutter) * 4);
+}
+
+.pb-4 {
+  padding-bottom: calc(var(--gutter) * 4);
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.my-0 {
+  margin-top: 0;
+  margin-bottom: -0px;
+}
+
+.mr-4 {
+  margin-right: calc(var(--gutter) * 4);
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: calc(var(--gutter));
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-end {
+  justify-content: end;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+  align-items: end;
+}
+
+.list-unstyled {
+  list-style: none;
+}
+
+.opacity-7 {
+  opacity: .7;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.card {
+  flex: 6.7% 0 1;
+  height: 8vw;
+  border: 2px solid #e0e0e0;
+  margin: var(--gutter);
+  position: relative;
+}
+
+.card img {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.card p:last-child {
+  transform: rotate(180deg);
+}
+
+.card .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.card[data-is-fliped="true"] .card-back {
+  display: none; 
+}
+
+.card.paired {
+  opacity: .5;
+}
+
+.card.wrong {
+  animation-name: wrongAnimation;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
+}
+
+.complete[data-is-completed="false"] {
+  display: none;
+}
+
+@keyframes wrongAnimation {
+  to {
+    border-color: #ffc738;
+  }
+}

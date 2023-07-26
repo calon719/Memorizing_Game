@@ -1,0 +1,48 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memorizing Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link href="./stylesheets/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="container flex column ai-end pt-4 pb-4">
+      <h1 class="fs-lg flex ai-center mb-0">
+        <img
+          class="w-12 mr-4"
+          src="https://assets-lighthouse.alphacamp.co/uploads/image/file/17990/__.png" alt="icon" />
+        Memorizing Game
+      </h1>
+      <h2 class="mt-0 mb-1 text-danger">Score: <span id="score">0</span></h2>
+      <p class="my-0">You've tried: <span id="tried-times">0</span> times</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <ul
+        id="cards"
+        class="m-0 p-0 pb-4 flex wrap jc-center list-unstyled"
+      ></ul>
+    </div>
+  </main>
+
+  <div
+    class="complete flex ai-center fixed top-0 bottom-0 right-0 left-0 z-100 bg-white-opacity"
+    data-is-completed="false"
+  >
+    <div class="complete-content bg-info-opacity w-full py-12 text-center">
+      <p class="fs-2xl text-dark-info m-0">Complete!</p>
+      <p class="mb-0 fs-lg">Score: <span class="score">0</span></p>
+      <p class="my-0 fs-lg">You've tried: <span class="tried-time">0</span> times</p>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
